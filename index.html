@@ -14,6 +14,8 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
 
 <body class="flex">
@@ -22,10 +24,49 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <div class="container flex">
-    <h1>Découverte</h1>
-    <p>Bonjour je m'appelle lucas</p>
-  </div>
+  <!-- start of the header-->
+    <header>
+    <nav class="flex container SeparateItems">
+      <aside class="socialcontainer">
+        <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/isabelle-passeniers/"></a>
+        <i class="fab fa-twitter-square"><a href="https://twitter.com/isapass"></a></i>
+        <i class="fab fa-github"><a href="https://github.com/isapas"></a></i>
+      </aside>
+      <aside class="mobilefirst topnav" id="myTopnav">
+        <a href="#">Accueil</a>
+        <a href="#">About me</a>
+        <a href="#">Compétences</a>
+        <a href="#">Formation</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Expérience</a>
+        <a href="#">Contact</a>
+        <a href="javascript:void(0);" class="icon"onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </aside>
+    </nav>
+    <div class=" image container">
+      <img  src="./img/myavatar.png" alt="ma photo">
+    </div>
+    <section>
+      <h1>Isabelle Passeniers</h1>
+      <h2>Développeuse web junior</h2>
+      <div class="socialcontainer">
+        <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/isabelle-passeniers/"></a>
+        <i class="fab fa-twitter-square"><a href="https://twitter.com/isapass"></a></i>
+        <i class="fab fa-github"><a href="https://github.com/isapas"></a></i>
+      </div>
+      <a href="./pdf/CVIsabellePasseniers.pdf" > Télécharger mon CV </a>
+    </section>
+    
+  </header>
+<!-- end of the header-->
+<!--start of the main-->
+
+<!--end of  the main-->
+<!--start of the footer-->
+
+<!--  end of the footer-->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -39,6 +80,17 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <!--script top nav responsive-->
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+  }
+  </script>
 </body>
 
 </html>
