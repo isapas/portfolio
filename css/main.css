@@ -99,13 +99,70 @@ textarea {
 
 /*start utility classes*/
 
-/* end of utility classes*/
+.flex {
 
+  display: flex;
+  flex-wrap: wrap;
+}
+.SpaceBetween {
+  justify-content: space-between;
+}
+.start {
+  justify-content: flex-start;
+}
+.end {
+  justify-content: flex-end;
+}
+.horizcenter {
+  justify-content: center;
+}
+.verticalcenter {
+  align-items: center;
+}
+.verticalstart {
+  align-items: flex-start;
+}
+.verticalend {
+    align-items: flex-end;
+}
+.tcenter {
+  text-align: center;
+}
+
+
+/* end of utility classes*/
+/*construction rules*/
+.left {
+  background-color: lightblue;
+  width: 50%;
+
+}
+.right {
+  background-color: lightpink;
+  width: 50%;
+}
+.imgcontainer {
+  background-color: blue;
+
+}
+img {
+  width: 100%;
+}
 /*start of the common rules*/
+body {
+  width: 100%;
+}
 
 /*end of the common rules*/
 
 /*start other rules*/
+
+.SocialContainer {
+  justify-content: space-around;
+  font-size: 2em;
+  color: lightgrey;
+}
+
 /* top nav responsive w3schools*/
 body {
   margin: 0;
@@ -118,7 +175,7 @@ body {
 }
 
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -139,6 +196,14 @@ body {
 
 .topnav .icon {
   display: none;
+}
+.rounded {
+    overflow:hidden;
+    -webkit-border-radius:15em;
+    -moz-border-radius:15em;
+    border-radius:15em;
+    width: 15em;
+    height:15em;
 }
 
 /*end of other rules*/
@@ -254,6 +319,7 @@ body {
     float: right;
     display: block;
   }
+
 }
 
 @media screen and (max-width: 600px) {
