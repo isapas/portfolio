@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>portfolio d'isabelle Passeniers</title>
   <meta name="description" content="portfolio_isabelle_Passeniers">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -17,55 +17,204 @@
   <script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 </head>
+<body>
 
-<body class="flex">
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
   <!-- start of the header-->
     <header>
-    <nav class="flex container SeparateItems">
-      <aside class="socialcontainer">
-        <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/isabelle-passeniers/"></a>
-        <i class="fab fa-twitter-square"><a href="https://twitter.com/isapass"></a></i>
-        <i class="fab fa-github"><a href="https://github.com/isapas"></a></i>
-      </aside>
-      <aside class="mobilefirst topnav" id="myTopnav">
+    <nav>
+      <aside class="mobilefirst topnav" id="Topnav">
         <a href="#">Accueil</a>
-        <a href="#">About me</a>
-        <a href="#">Compétences</a>
-        <a href="#">Formation</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Expérience</a>
-        <a href="#">Contact</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#Compétences">Compétences</a>
+        <a href="#AboutMe">A propos de moi...</a>
+        <a href="#Formation">Formation</a>
+        <a href="#Experiences">Expérience</a>
+        <a href="#Contact">Contact</a>
         <a href="javascript:void(0);" class="icon"onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+          <i class="fa fa-bars"></i></a>
       </aside>
     </nav>
-    <div class=" image container">
-      <img  src="./img/myavatar.png" alt="ma photo">
-    </div>
-    <section>
-      <h1>Isabelle Passeniers</h1>
-      <h2>Développeuse web junior</h2>
-      <div class="socialcontainer">
-        <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/isabelle-passeniers/"></a>
-        <i class="fab fa-twitter-square"><a href="https://twitter.com/isapass"></a></i>
-        <i class="fab fa-github"><a href="https://github.com/isapas"></a></i>
+    <div class="flex">
+      <!--container image-->
+      <div class="left flex horizcenter verticalcenter">
+        <div class="imgcontainer">
+          <img id="avatar"  class="rounded" src="./img/myavatar.png" alt="ma photo">
+        </div>      
       </div>
-      <a href="./pdf/CVIsabellePasseniers.pdf" > Télécharger mon CV </a>
-    </section>
-    
+      <!--container droite -->
+      <section class=" right tcenter">
+        <h1>Isabelle Passeniers</h1>
+        <h2>Développeuse web junior</h2>
+        <div class="SocialContainer tcenter">
+          <a href="https://www.linkedin.com/in/isabelle-passeniers/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/isapass"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://github.com/isapas"><i class="fab fa-github"></i></a>
+        </div>
+      </section>
+    </div>
+
   </header>
 <!-- end of the header-->
 <!--start of the main-->
+<main>
+  
+  <section id="AboutMe" class="tcenter">
+    <h2>A propos de moi...</h2>
+    <p>Passionnée par le monde de l'informatique depuis très jeune, je n’ai cessé de suivre l’évolution de ces technologies. Après un parcours de 20 ans dans le travail social, j'ai eu l'envie d'apprendre le métier de développeur. Mon but: Créer des sites et des applications à la fois beaux, responsive, dynamiques et répondant aux besoins et aux envies des clients. Pour celà je suis en apprentissage et en veille permanente de manière à être toujours à la pointe d'une technologie qui évolue en permanence. </p>
+    <a href="./pdf/CVIsabellePasseniers.pdf" > Télécharger mon CV </a>
+  </section>
+  <section id="Compétences tcenter">
+    <!--two containers to display in two colums-->
+    <div class="flex">
+      <h2>Langages</h2>
+    <!--divs container for circular progress bar around langages icons-->
+    <div class="icon-container">
+      <i class="fab fa-html5"></i>
+    </div>
+    <div class="icon-container">
+      <i class="fab fa-css3-alt"></i>
+    </div>
+    <div class="icon-container">
+      <i class="fab fa-php"></i>
+    </div>  
+    <div class="icon-container">
+      <i class="fab fa-js"></i>
+    </div>
+  </div>
+    <div class="flex">
+      <h2>Outils</h2>
+      <div class="icon-container">
+        <i class="fab fa-windows"></i>
+      </div>
+      <div class="icon-container">
+        <i class="fab fa-linux"></i>
+      </div>
+      <div class="icon-container">
+        <i class="fab fa-git"></i>
+      </div>
+      <div class="icon-container">
+        <i class="fab fa-github"></i>
+      </div>
+    </div>
+  </section>
+  <section id="Portfolio" class="tcenter">
+    <h2>Mes réalisations</h2>
+    <!--container for a project with photo and portfolio-->
+    <div class="flex">
+      <div class="photoContainer">
+        <img src="" alt="projet">
+      </div>
+      <p>description du projet et langages utilisés</p>
+    </div>
+    <div class="flex">
+      <div class="photoContainer">
+        <img src="" alt="projet">
+      </div>
+      <p>description du projet et langages utilisés</p>
+    </div>
+    <div class="flex">
+      <div class="photoContainer">
+        <img src="" alt="projet">
+      </div>
+      <p>description du projet et langages utilisés</p>
+    </div>
+    <div class="flex">
+      <div class="photoContainer">
+        <img src="" alt="projet">
+      </div>
+      <p>description du projet et langages utilisés</p>
+    </div>
+    <div class="flex">
+      <div class="photoContainer">
+        <img src="" alt="projet">
+      </div>
+      <p>description du projet et langages utilisés</p>
+    </div>
+    <div class="flex">
+      <div class="photoContainer">
+        <img src="" alt="projet">
+      </div>
+      <p>description du projet et langages utilisés</p>
+    </div>
+  </section>
+  <section id="Formation" class="tcenter">
+    <div class="flex">
+      <h2>Formations</h2>
+      <div class="container">
+        <h3>Développeur web</h3>
+        <p>SIMPLON.co</p>  
+      </div>
+      <div class="container">
+        <h3>Educatrice de jeunes enfants</h3>
+        <p>Centre Régional de Formation des Professionnels de l'Enfance</p>
+      </div>
+    </div>
+    <div class="flex">
+        <h2>Autodidacte</h2>
+        <div class="container">
+          <h3>lorem</h3>
+          <p>lorem</p>    
+        </div>
+      </div>
+  </section>
+  <section id="Professional" class="tcenter">
+    <h2>Expériences Professionelles</h2>
+    <div class="flex">
+      <h3>Poste</h3>
+      <p>Date det société</p>
+    </div>
+    <h2>Expériences Professionelles</h2>
+    <div class="flex">
+      <h3>Poste</h3>
+      <p>Date det société</p>
+    </div>
+    <h2>Expériences Professionelles</h2>
+    <div class="flex">
+      <h3>Poste</h3>
+      <p>Date det société</p>
+    </div>
+    <h2>Expériences Professionelles</h2>
+    <div class="flex">
+      <h3>Poste</h3>
+      <p>Date et société</p>
+    </div>
+  </section>
+  <section>
+    <h2>Contact</h2>
+<!--<div class="container">
+      <form action="/action_page.php">
+        <label for="Nom">Nom</label>
+        <input type="text" id="fname" name="Nom" placeholder="Votre nom..">
+        <label for="prénom">Prénom</label>
+        <input type="text" id="prénom" name="prénom" placeholder="Votre prénom..">
+        <label for="subject">Votre message</label>
+        <textarea id="subject" name="subject" placeholder="Ecrire votre message ici..." style="height:200px"></textarea>
 
+        <input type="Envoyer" value="Envoyer">
+      </form>
+    </div>-->
+    <h4>Isabelle Passeniers</h4>
+    <address class="">
+      53/12, rue du 8 mai 1945,<br>
+      59370 Mons en Baroeul
+    </address>
+    <a href="tel: +33 627 131 480">06.27.13.14.80</a><br>
+    <a href="mailto:joe@example.com?subject=feedback">email me</a>
+  </section>
+
+</main>
 <!--end of  the main-->
 <!--start of the footer-->
-
+<footer class="flex">
+  <aside class="socialcontainer">
+    <a href="https://www.linkedin.com/in/isabelle-passeniers/"><i class="fab fa-linkedin"></i></a>
+    <a href="https://twitter.com/isapass"><i class="fab fa-twitter-square"></i></a>
+    <a href="https://github.com/isapas"><i class="fab fa-github"></i></a>
+  </aside>
+  <aside class="copyright">
+    <p>Développé par Isabelle Passeniers 2018</p>
+  </aside>
+</footer>
 <!--  end of the footer-->
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
@@ -83,7 +232,7 @@
   <!--script top nav responsive-->
   <script>
   function myFunction() {
-    var x = document.getElementById("myTopnav");
+    var x = document.getElementById("Topnav");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
