@@ -34,15 +34,15 @@
           <i class="fa fa-bars"></i></a>
       </aside>
     </nav>
-    <div class="flex">
+    <div class="flex mobilefirst">
       <!--container image-->
-      <div class="left flex horizcenter verticalcenter">
+      <div class="left flex hcenter vcenter mobilefirst ">
         <div class="imgcontainer">
-          <img id="avatar"  class="rounded" src="./img/myavatar.png" alt="ma photo">
+          <img id="avatar" class="rounded" src="./img/myavatar.png" alt="ma photo">
         </div>      
       </div>
       <!--container droite -->
-      <section class=" right tcenter">
+      <section class=" right mobilefirst tcenter">
         <h1>Isabelle Passeniers</h1>
         <h2>Développeuse web junior</h2>
         <div class="SocialContainer tcenter">
@@ -57,46 +57,43 @@
 <!-- end of the header-->
 <!--start of the main-->
 <main>
-  
-  <section id="AboutMe" class="tcenter">
-    <h2>A propos de moi...</h2>
-    <p>Passionnée par le monde de l'informatique depuis très jeune, je n’ai cessé de suivre l’évolution de ces technologies. Après un parcours de 20 ans dans le travail social, j'ai eu l'envie d'apprendre le métier de développeur. Mon but: Créer des sites et des applications à la fois beaux, responsive, dynamiques et répondant aux besoins et aux envies des clients. Pour celà je suis en apprentissage et en veille permanente de manière à être toujours à la pointe d'une technologie qui évolue en permanence. </p>
-    <a href="./pdf/CVIsabellePasseniers.pdf" > Télécharger mon CV </a>
-  </section>
-  <section id="Compétences tcenter">
+  <div id="Compétences tcenter ">
     <!--two containers to display in two colums-->
-    <div class="flex">
+    <section class="skillsicons vcenter ">
       <h2>Langages</h2>
-    <!--divs container for circular progress bar around langages icons-->
-    <div class="icon-container">
-      <i class="fab fa-html5"></i>
-    </div>
-    <div class="icon-container">
-      <i class="fab fa-css3-alt"></i>
-    </div>
-    <div class="icon-container">
-      <i class="fab fa-php"></i>
-    </div>  
-    <div class="icon-container">
-      <i class="fab fa-js"></i>
-    </div>
-  </div>
-    <div class="flex">
+      <div class="flex hcenter vcenter ">
+      <div class="icon flex SeparateItems vcenter">
+        <i class="fab fa-html5"></i>
+      </div>
+      <div class="icon flex SeparateItems vcenter">
+        <i class="fab fa-css3-alt"></i>
+      </div>
+      <div class="icon flex SeparateItems vcenter ">
+        <i class="fab fa-php"></i>
+      </div>  
+      <div class="icon flex SeparateItems vcenter">
+        <i class="fab fa-js"></i>
+      </div>
+    </div>    
+   </section>
+    <section class="skillsicons vcenter ">        
       <h2>Outils</h2>
-      <div class="icon-container">
-        <i class="fab fa-windows"></i>
-      </div>
-      <div class="icon-container">
-        <i class="fab fa-linux"></i>
-      </div>
-      <div class="icon-container">
-        <i class="fab fa-git"></i>
-      </div>
-      <div class="icon-container">
-        <i class="fab fa-github"></i>
-      </div>
-    </div>
-  </section>
+      <div class="flex hcenter">
+        <div class="icon flex SeparateItems vcenter">
+          <i class="fab fa-windows"></i>
+        </div>
+        <div class="icon flex SeparateItems vcenter">
+          <i class="fab fa-linux"></i>
+        </div>
+        <div class="icon flex SeparateItems vcenter">
+          <i class="fab fa-git"></i>
+        </div>
+        <div class="icon flex SeparateItems vcenter">
+          <i class="fab fa-github"></i>
+        </div>
+      </div>      
+    </section>
+  </div>
   <section id="Portfolio" class="tcenter">
     <h2>Mes réalisations</h2>
     <!--container for a project with photo and portfolio-->
@@ -206,6 +203,14 @@
 <!--end of  the main-->
 <!--start of the footer-->
 <footer class="flex">
+  <section id="AboutMe" class="tcenter">
+    <h2>A propos de moi...</h2>
+    <p>Passionnée par le monde de l'informatique depuis très jeune, je n’ai cessé de suivre l’évolution de ces technologies. Après un parcours de 20 ans dans le travail social, j'ai eu l'envie d'apprendre le métier de développeur. Mon but: Créer des sites et des applications à la fois beaux, responsive, dynamiques et répondant aux besoins et aux envies des clients. Pour celà je suis en apprentissage et en veille permanente de manière à être toujours à la pointe d'une technologie qui évolue en permanence. </p>
+    <form>
+      <input  class="btn "type="button" value="Télécharger mon CV" onclick="window.location.href='./pdf/CVIsabellePasseniers.pdf'"/> 
+    </form> 
+  
+  </section>
   <aside class="socialcontainer">
     <a href="https://www.linkedin.com/in/isabelle-passeniers/"><i class="fab fa-linkedin"></i></a>
     <a href="https://twitter.com/isapass"><i class="fab fa-twitter-square"></i></a>
