@@ -244,7 +244,14 @@ body {
     width: 15em;
     height:15em;
 }
-
+/* rules of the portfolio projects*/
+.projectcontainer {
+  width: 33.3%;
+  background-color: lightgreen;
+}
+.whidthall {
+  width: 100%;
+}
 /*end of other rules*/
 
 
