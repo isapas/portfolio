@@ -21,8 +21,11 @@
 
   <!-- start of the header-->
     <header>
-    <nav>
+    <nav>      
       <aside class="mobilefirst topnav" id="Topnav">
+        <aside class="logo ">
+          <img src="./img/balisesourislogo.png" alt="logo">
+        </aside>
         <a href="#">Accueil</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#Compétences">Compétences</a>
@@ -34,153 +37,210 @@
           <i class="fa fa-bars"></i></a>
       </aside>
     </nav>
-    <div class="flex">
+    <div class="flex mobilefirst">
       <!--container image-->
-      <div class="left flex horizcenter verticalcenter">
-        <div class="imgcontainer">
-          <img id="avatar"  class="rounded" src="./img/myavatar.png" alt="ma photo">
+      <div class="left flex hcenter vcenter mobilefirst ">
+        <div class="imgcontainer flex">
+          <img id="avatar" class="rounded" src="./img/myavatar.png" alt="ma photo">
         </div>      
       </div>
       <!--container droite -->
-      <section class=" right tcenter">
-        <h1>Isabelle Passeniers</h1>
-        <h2>Développeuse web junior</h2>
-        <div class="SocialContainer tcenter">
+      <section id="Accueil"class=" right mobilefirst tcenter">
+        <div class="tcontainer flex hcenter vcenter">
+          <h1>Isabelle Passeniers</h1>
+        </div>
+        <div class="tcontainer flex hcenter vcenter">
+          <h2>Développeuse web junior</h2>
+        </div>
+        <form>
+          <input  class="btn "type="button" value="Télécharger mon CV" onclick="window.location.href='./pdf/CVIsabellePasseniers.pdf'"/> 
+        </form>
+        <div class="tcontainer SocialContainer flex tcenter hcenter vcenter">
           <a href="https://www.linkedin.com/in/isabelle-passeniers/"><i class="fab fa-linkedin"></i></a>
           <a href="https://twitter.com/isapass"><i class="fab fa-twitter-square"></i></a>
           <a href="https://github.com/isapas"><i class="fab fa-github"></i></a>
         </div>
       </section>
     </div>
-
   </header>
 <!-- end of the header-->
 <!--start of the main-->
 <main>
-  
-  <section id="AboutMe" class="tcenter">
-    <h2>A propos de moi...</h2>
-    <p>Passionnée par le monde de l'informatique depuis très jeune, je n’ai cessé de suivre l’évolution de ces technologies. Après un parcours de 20 ans dans le travail social, j'ai eu l'envie d'apprendre le métier de développeur. Mon but: Créer des sites et des applications à la fois beaux, responsive, dynamiques et répondant aux besoins et aux envies des clients. Pour celà je suis en apprentissage et en veille permanente de manière à être toujours à la pointe d'une technologie qui évolue en permanence. </p>
-    <a href="./pdf/CVIsabellePasseniers.pdf" > Télécharger mon CV </a>
-  </section>
-  <section id="Compétences tcenter">
+  <div id="Compétences" class="tcenter flex">
     <!--two containers to display in two colums-->
-    <div class="flex">
+    <section class="skillsicons mobilefirst vcenter around  ">
       <h2>Langages</h2>
-    <!--divs container for circular progress bar around langages icons-->
-    <div class="icon-container">
-      <i class="fab fa-html5"></i>
-    </div>
-    <div class="icon-container">
-      <i class="fab fa-css3-alt"></i>
-    </div>
-    <div class="icon-container">
-      <i class="fab fa-php"></i>
-    </div>  
-    <div class="icon-container">
-      <i class="fab fa-js"></i>
-    </div>
-  </div>
-    <div class="flex">
+      <div class=" iconcontainer flex hcenter ">
+      <div class="icon SeparateItems ">
+        <i class="fab fa-html5"></i>
+      </div>
+      <div class="icon SeparateItems ">
+        <i class="fab fa-css3-alt"></i>
+      </div>
+      <div class="icon SeparateItems ">
+        <i class="fab fa-php"></i>
+      </div>  
+      <div class="icon SeparateItems">
+        <i class="fab fa-js"></i>
+      </div>
+    </div>    
+   </section>
+    <section class="skillsicons mobilefirst vcenter ">        
       <h2>Outils</h2>
-      <div class="icon-container">
-        <i class="fab fa-windows"></i>
-      </div>
-      <div class="icon-container">
-        <i class="fab fa-linux"></i>
-      </div>
-      <div class="icon-container">
-        <i class="fab fa-git"></i>
-      </div>
-      <div class="icon-container">
-        <i class="fab fa-github"></i>
-      </div>
+      <div class="iconcontainer flex hcenter">
+        <div class="icon SeparateItems">
+          <i class="fab fa-windows"></i>
+        </div>
+        <div class="icon SeparateItems">
+          <i class="fab fa-linux"></i>
+        </div>
+        <div class="icon SeparateItems">
+          <i class="fab fa-git"></i>
+        </div>
+        <div class="icon SeparateItems">
+          <i class="fab fa-github"></i>
+        </div>
+      </div>      
+    </section>
+  </div>
+  <section id="Portfolio" class=" flex ">
+    <div class="whidthall hcenter vcenter">
+      <h2>Mes réalisations</h2>
     </div>
-  </section>
-  <section id="Portfolio" class="tcenter">
-    <h2>Mes réalisations</h2>
     <!--container for a project with photo and portfolio-->
-    <div class="flex">
-      <div class="photoContainer">
-        <img src="" alt="projet">
+    <div class="flex around ">
+      <div class=" projectcontainer flex vcenter hcenter">
+        <figure class="photoContainer">
+          <img src="./img/screentest.png" alt="projet">
+        </figure>
+        <div class="pcontainer tcenter hcenter vcenter">
+          <p>Copie de la page d'accueil du site Twiiter dans le cadre de la formation en HTML5 et CSS3<br>Utilisation de flexbox pour positionner les éléments</p>  
+          <a href="#">lien vers githubpage</a>
+        </div>
+
       </div>
-      <p>description du projet et langages utilisés</p>
+      <div class="projectcontainer flex hcenter vcenter">
+        <figure class="photoContainer hcenter vcenter">
+          <img src="./img/screentest.png" alt="projet">
+        </figure>
+        <div class="pcontainer tcenter hcenter vcenter">
+          <p>Copie de la page d'accueil du site Ocea en html5 et css3. utilisation de flexbox pour positionner les éléments.<br></p>
+          <a  href="#">lien vers github page</a>  
+        </div>
+      </div>
+      <div class="flex projectcontainer hcenter vcenter">
+        <figure class="photoContainer">
+          <img src="./img/screentest.png" alt="projet">
+        </figure>
+        <div class="pcontainer tcenter hcenter vcenter">
+          <p> Site internet fictif selon un cahier des charges.<br>Site avec plusieurs pages en html5 et css3, création de formulaires: contact, tri, connection. création de fiches produits</p>  
+          <a href="#">lien vers github page</a>
+        </div>
+      </div>
     </div>
-    <div class="flex">
-      <div class="photoContainer">
-        <img src="" alt="projet">
+    <div class="flex projectcontainer hcenter vcenter">
+      <figure class="photoContainer">
+        <img src="./img/screentest.png" alt="projet">
+      </figure>
+      <div class="pcontainer tcenter hcenter vcenter">
+        <p>Solution logicielle fictive selon un cahier des charges précis. Création d'une plateforme d'organisation collaborative par todo list pour une entreprise de bâtiment en html5 et css3. Création de formlaires</p>  
+        <a href="#">lien vers github page</a>
       </div>
-      <p>description du projet et langages utilisés</p>
     </div>
-    <div class="flex">
-      <div class="photoContainer">
-        <img src="" alt="projet">
+    <div class="flex projectcontainer hcenter vcenter">
+      <figure class="photoContainer">
+        <img src="./img/screentest.png" alt="projet">
+      </figure>
+      <div class="pcontainer tcenter hcenter vcenter">
+        <p>Site internet fictif selon un cahier des charges précis: blog de pâtisserie en html5 et css3.<br>utilisation de flexbox, media queries, call to action, formulaires</p>  
+        <a href="#">lien vers github page</a>
       </div>
-      <p>description du projet et langages utilisés</p>
     </div>
-    <div class="flex">
-      <div class="photoContainer">
-        <img src="" alt="projet">
+    <div class="flex projectcontainer hcenter vcenter">
+      <figure class="photoContainer">
+        <img src="./img/screentest.png" alt="projet">
+      </figure>
+      <div class="pcontainer tcenter hcenter vcenter">
+        <p>Intégration de mon portfolio dans un template existant utilisant bootstrap et jquiery.<br></p>  
+        <a href="#">lien vers github page</a>
       </div>
-      <p>description du projet et langages utilisés</p>
-    </div>
-    <div class="flex">
-      <div class="photoContainer">
-        <img src="" alt="projet">
-      </div>
-      <p>description du projet et langages utilisés</p>
-    </div>
-    <div class="flex">
-      <div class="photoContainer">
-        <img src="" alt="projet">
-      </div>
-      <p>description du projet et langages utilisés</p>
     </div>
   </section>
-  <section id="Formation" class="tcenter">
-    <div class="flex">
+  <section id="Formation" class="flex">
+    <div class="hcenter vcenter left">
       <h2>Formations</h2>
       <div class="container">
         <h3>Développeur web</h3>
         <p>SIMPLON.co</p>  
+        <p>De Septembre 2018 à Mars 2019</p>
+        <p>Contenus: html5, css3, php, javascript, bootstrap, symfony4, wordpress</p>
       </div>
       <div class="container">
         <h3>Educatrice de jeunes enfants</h3>
         <p>Centre Régional de Formation des Professionnels de l'Enfance</p>
+        <p>De septembre 2012 à juin 2015</p>
       </div>
     </div>
-    <div class="flex">
+    <div class="hcenter vcenter right">
         <h2>Autodidacte</h2>
         <div class="container">
-          <h3>lorem</h3>
-          <p>lorem</p>    
+          <h3>Openclassrooms</h3>
+          <p>Apprenez à créer votre site web avec HTML5 et CSS3 </p>
+          <p>Concevez votre site web avec PHP et MySQL</p>
+          <p>Algorithmique pour l'apprenti programmeur </p>
+          <p>Découvrez le fonctionnement des algorithmes </p>
+          <p>UX design : découvrez les fondamentaux ! </p>
+          <p>Gérez votre projet avec une équipe Scrum </p>
+          <p> Reprenez le contrôle à l'aide de Linux !</p>    
+        </div>
+        <div class="container">
+          <h3>freecodecamp</h3>
+          <p>curriculum Responsive Web Design</p>
+          <p>Javascript Algorithms And Data Structures Certification (en cours)</p>
         </div>
       </div>
   </section>
-  <section id="Professional" class="tcenter">
-    <h2>Expériences Professionelles</h2>
-    <div class="flex">
-      <h3>Poste</h3>
-      <p>Date det société</p>
+  <section id="Professional" class="flex">
+    <div class="left hcenter vcenter tcenter">
+      <h2>Expériences Professionelles en tant que développeuse</h2>  
+      <div class="container">  
+        <h3>Stage</h3>
+        <p>2019 det société</p>
+      </div>
+      <div class="container">
+        <h3>Poste</h3>
+        <p>date et société</p>
+      </div>
     </div>
-    <h2>Expériences Professionelles</h2>
-    <div class="flex">
-      <h3>Poste</h3>
-      <p>Date det société</p>
-    </div>
-    <h2>Expériences Professionelles</h2>
-    <div class="flex">
-      <h3>Poste</h3>
-      <p>Date det société</p>
-    </div>
-    <h2>Expériences Professionelles</h2>
-    <div class="flex">
-      <h3>Poste</h3>
-      <p>Date et société</p>
+    <div class="right vcenter hcenter tcenter">
+      <h2>Expériences Professionelles antérieures</h2>
+      <div class="container">
+        <h3>Animatrice socio-culturelle</h3>
+        <p>De 2007 à 2018 à différentes périodes de quelques semaines à plusieurs années</p>
+        <p>Association Caramel</p>
+        <p>Accueil et accompagnement d'enfants de 3 à 6 ans en périscolaire et pendants les vacances scolaires. Conception et mise en places d'activités éducatives et de loisirs variées.
+      </div>    
+      <div class="container">
+        <h3>Educatrice de jeunes enfants</h3>
+        <p>De juillet 2016 à juillet 2017</p>
+        Accueil et accompagnement de jeunes enfants de 3 mois à 3 ans (organisation de la vie quotidienne, mise en place d'activités éducatives, observation, suivi) et de leur famille (écoute et soutien). Accompagnement pédagogique de l'équipe. Mise en place et animation des réunions de section et d'analyses de pratiques professionnelles.
+      </div>  
     </div>
   </section>
-  <section>
-    <h2>Contact</h2>
+
+</main>
+<!--end of  the main-->
+<!--start of the footer-->
+<footer class="flex mobilefirst">
+  <section id="AboutMe" class="tcenter vcenter hstart mobilefirst">
+    <h2>Qui suis-je?</h2>
+    <p>Passionnée par le monde de l'informatique depuis très jeune, je n’ai cessé de suivre l’évolution de ces technologies. Après un parcours de 20 ans dans le travail social, j'ai eu l'envie d'apprendre le métier de développeur. Mon but: Créer des sites et des applications à la fois beaux, responsive, dynamiques et répondant aux besoins et aux envies des clients. Pour celà je suis en apprentissage et en veille permanente de manière à être toujours à la pointe d'une technologie qui évolue en permanence. </p>
+    <form>
+      <input  class="btn "type="button" value="Télécharger mon CV" onclick="window.location.href='./pdf/CVIsabellePasseniers.pdf'"/> 
+    </form> 
+  </section>
+  <section id="Contact" class="">
+    <h2>Pour me contacter:</h2>
 <!--<div class="container">
       <form action="/action_page.php">
         <label for="Nom">Nom</label>
@@ -193,25 +253,26 @@
         <input type="Envoyer" value="Envoyer">
       </form>
     </div>-->
-    <h4>Isabelle Passeniers</h4>
-    <address class="">
-      53/12, rue du 8 mai 1945,<br>
-      59370 Mons en Baroeul
-    </address>
-    <a href="tel: +33 627 131 480">06.27.13.14.80</a><br>
-    <a href="mailto:joe@example.com?subject=feedback">email me</a>
+    <div class="contact tcenter col vcenter">
+      <h4>Isabelle Passeniers</h4>
+      <address class="">
+        53/12, rue du 8 mai 1945,<br>
+        59370 Mons en Baroeul
+      </address>
+      <a href="tel: +33 627 131 480">06.27.13.14.80</a><br>
+      <a href="mailto:joe@example.com?subject=feedback">isabelle.passeniers@gmail.com</a>
+    </div>
+    
   </section>
-
-</main>
-<!--end of  the main-->
-<!--start of the footer-->
-<footer class="flex">
-  <aside class="socialcontainer">
-    <a href="https://www.linkedin.com/in/isabelle-passeniers/"><i class="fab fa-linkedin"></i></a>
-    <a href="https://twitter.com/isapass"><i class="fab fa-twitter-square"></i></a>
-    <a href="https://github.com/isapas"><i class="fab fa-github"></i></a>
+  <aside  class="fsocial hend tcenter vcenter">
+    <h2>Suivez moi</h2>
+    <div class="SocialContainer vcenter ">
+      <a href="https://www.linkedin.com/in/isabelle-passeniers/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/isapass"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://github.com/isapas"><i class="fab fa-github"></i></a>
+    </div>
   </aside>
-  <aside class="copyright">
+  <aside class="copyright hcenter vcenter">
     <p>Développé par Isabelle Passeniers 2018</p>
   </aside>
 </footer>
