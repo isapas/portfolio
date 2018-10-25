@@ -5,17 +5,14 @@
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
  */
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
-
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -62,6 +59,7 @@ img,
 svg,
 video {
     vertical-align: middle;
+    border-radius: 10px;
 }
 
 /*
@@ -125,6 +123,9 @@ textarea {
 .vend {
     align-items: flex-end;
 }
+.centered {
+  margin:auto;
+}
 .col {
   display: column;
 }
@@ -152,17 +153,35 @@ textarea {
   background-color: greenyellow;
   height: calc(100% / 3);
 }
+
 #Accueil {
   height: 48vh;
 }
-#Compétences {
-  height:60vh;
+#AboutMe {
+  width: 33.3%;
+  background-color: lightyellow;
+}
+#Contact{
+  width: 33.3%;
+  background-color: pink;
+}
+.contact {
+  margin-top: 20%;
+  margin-bottom: 20%
+}
+.fsocial {
+    width: 33.3%;
+    background-color: lightblue;
+}
+.copyright {
+  width: 100%;
+  background-color: lightgrey;
 }
 .skillsicons {
   height: 50%;
   width: 100%;
-
 }
+
 img {
   width: 100%;
   margin-left: auto;
@@ -172,12 +191,19 @@ img {
 body {
   width: 100%;
 }
+
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
 .btn {
   background-color: lightskyblue;
+  border-radius: 1em;
 }
 /*end of the common rules*/
 
@@ -195,22 +221,26 @@ h1, h2, h3, h4 {
 }
 .icon {
   font-size: 4em;
+  padding: 0.1em;
   background-color: darkcyan;
   color: darkgrey;
 }
 .skillsicons {
   background-color: orange;
   width: 50%
-/*justify-content: center;*/
 }
 .iconcontainer {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+figure {
+
+    min-width: 70%;
+    height: auto;
+}
 h2 {
   background-color: lightgreen;
   text-align: center;
-
 }
 /* top nav responsive w3schools*/
 body {
@@ -257,23 +287,16 @@ body {
 /* rules of the portfolio projects*/
 .projectcontainer {
   width: 33.3%;
+  height: 70vh;
   background-color: lightgreen;
+}
+.pcontainer {
+  width: 80%;
 }
 .whidthall {
   width: 100%;
 }
 /*end of other rules*/
-
-
-
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -366,29 +389,36 @@ body {
     .topnav a.icon {
       float: right;
       display: block;
-}
-.topnav.responsive {
+    }
+    .topnav.responsive {
   position: relative;
-}
-.topnav.responsive .icon {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.topnav.responsive a {
-  float: none;
-  display: block;
-  text-align: left;
-}
-.mobilefirst {
-  display: block;
-  margin: auto;
-  width: 100%;
-}
-.col {
-  flex-direction: column;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    }/*end of top nav responsive rules*/
+
+  .mobilefirst {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  .col {
+    flex-direction: column;
     justify-content: center;
-}
+  }
+  .projectcontainer {
+    width: 100%;
+  }
 }
 /* tab*/
 @media only screen and (min-width: 35em) {
@@ -402,7 +432,8 @@ body {
 @media screen and (min-width: 1024px) {
 
 }
-/*end of top nav responsive rules*/
+
+
 
 /* end of media quieries rules*/
 /* ==========================================================================
