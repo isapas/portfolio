@@ -37,7 +37,7 @@
           <i class="fa fa-bars"></i></a>
       </aside>
     </nav>
-    <div class="flex mobilefirst">
+    <div id="Accueil"￼ class="Accueil flex mobilefirst">
       <!--container image-->
       <div class="left flex hcenter vcenter mobilefirst ">
         <div class="imgcontainer flex">
@@ -45,20 +45,22 @@
         </div>      
       </div>
       <!--container droite -->
-      <section id="Accueil"class=" right mobilefirst tcenter">
-        <div class="tcontainer flex hcenter vcenter">
-          <h1>Isabelle Passeniers</h1>
-        </div>
-        <div class="tcontainer flex hcenter vcenter">
-          <h2>Développeuse web junior</h2>
-        </div>
-        <form>
-          <input  class="btn "type="button" value="Télécharger mon CV" onclick="window.location.href='./pdf/CVIsabellePasseniers.pdf'"/> 
-        </form>
-        <div class="tcontainer SocialContainer flex tcenter hcenter vcenter">
-          <a href="https://www.linkedin.com/in/isabelle-passeniers/"><i class="fab fa-linkedin"></i></a>
-          <a href="https://twitter.com/isapass"><i class="fab fa-twitter-square"></i></a>
-          <a href="https://github.com/isapas"><i class="fab fa-github"></i></a>
+      <section class=" right mobilefirst flex">
+        <div class="smallcontainer flex col">
+          <div class="tcontainer hcenter vcenter tcenter mobilefirst ">
+            <h1>Isabelle Passeniers</h1>
+          </div>
+          <div class="tcontainer hcenter vcenter tcenter mobilefirst">
+            <h2>Développeuse web junior</h2>
+          </div>
+          <form class="centered">
+            <input  class="btn" type="button" value="Télécharger mon CV" onclick="window.location.href='./pdf/CVIsabellePasseniers.pdf'"/> 
+          </form>
+          <div class=" mobilefirst tcontainer SocialContainer flex tcenter ">
+            <a href="https://www.linkedin.com/in/isabelle-passeniers/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/isapass"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://github.com/isapas"><i class="fab fa-github"></i></a>
+          </div>
         </div>
       </section>
     </div>
@@ -103,71 +105,71 @@
       </div>      
     </section>
   </div>
-  <section id="Portfolio" class=" flex ">
-    <div class="whidthall hcenter vcenter">
+  <section id="Portfolio" class="flex ">
+    <div class="whidthall hcenter ">
       <h2>Mes réalisations</h2>
     </div>
     <!--container for a project with photo and portfolio-->
     <div class="flex around ">
-      <div class=" projectcontainer flex vcenter hcenter">
+      <div class=" projectcontainer flex hcenter">
         <figure class="photoContainer">
           <img src="./img/screentest.png" alt="projet">
         </figure>
-        <div class="pcontainer tcenter hcenter vcenter">
+        <div class="pcontainer hcenter vcenter">
           <p>Copie de la page d'accueil du site Twiiter dans le cadre de la formation en HTML5 et CSS3<br>Utilisation de flexbox pour positionner les éléments</p>  
           <a href="#">lien vers githubpage</a>
         </div>
 
       </div>
-      <div class="projectcontainer flex hcenter vcenter">
+      <div class="projectcontainer flex hcenter ">
         <figure class="photoContainer hcenter vcenter">
           <img src="./img/screentest.png" alt="projet">
         </figure>
-        <div class="pcontainer tcenter hcenter vcenter">
+        <div class="pcontainer hcenter vcenter">
           <p>Copie de la page d'accueil du site Ocea en html5 et css3. utilisation de flexbox pour positionner les éléments.<br></p>
           <a  href="#">lien vers github page</a>  
         </div>
       </div>
-      <div class="flex projectcontainer hcenter vcenter">
+      <div class="flex projectcontainer hcenter">
         <figure class="photoContainer">
           <img src="./img/screentest.png" alt="projet">
         </figure>
-        <div class="pcontainer tcenter hcenter vcenter">
+        <div class="pcontainer hcenter vcenter">
           <p> Site internet fictif selon un cahier des charges.<br>Site avec plusieurs pages en html5 et css3, création de formulaires: contact, tri, connection. création de fiches produits</p>  
           <a href="#">lien vers github page</a>
         </div>
       </div>
     </div>
-    <div class="flex projectcontainer hcenter vcenter">
+    <div class="flex projectcontainer hcenter">
       <figure class="photoContainer">
         <img src="./img/screentest.png" alt="projet">
       </figure>
-      <div class="pcontainer tcenter hcenter vcenter">
+      <div class="pcontainer hcenter vcenter ">
         <p>Solution logicielle fictive selon un cahier des charges précis. Création d'une plateforme d'organisation collaborative par todo list pour une entreprise de bâtiment en html5 et css3. Création de formlaires</p>  
         <a href="#">lien vers github page</a>
       </div>
     </div>
-    <div class="flex projectcontainer hcenter vcenter">
+    <div class="flex projectcontainer hcenter">
       <figure class="photoContainer">
         <img src="./img/screentest.png" alt="projet">
       </figure>
-      <div class="pcontainer tcenter hcenter vcenter">
+      <div class="pcontainer hcenter vcenter">
         <p>Site internet fictif selon un cahier des charges précis: blog de pâtisserie en html5 et css3.<br>utilisation de flexbox, media queries, call to action, formulaires</p>  
         <a href="#">lien vers github page</a>
       </div>
     </div>
-    <div class="flex projectcontainer hcenter vcenter">
+    <div class="flex projectcontainer hcenter">
       <figure class="photoContainer">
         <img src="./img/screentest.png" alt="projet">
       </figure>
-      <div class="pcontainer tcenter hcenter vcenter">
+      <div class="pcontainer hcenter vcenter">
         <p>Intégration de mon portfolio dans un template existant utilisant bootstrap et jquiery.<br></p>  
         <a href="#">lien vers github page</a>
       </div>
     </div>
   </section>
-  <section id="Formation" class="flex">
-    <div class="hcenter vcenter left">
+  <section id="Formation" class="flex mobilefirst">
+    <div class="hcenter vcenter left mobilefirst">
       <h2>Formations</h2>
       <div class="container">
         <h3>Développeur web</h3>
@@ -181,27 +183,31 @@
         <p>De septembre 2012 à juin 2015</p>
       </div>
     </div>
-    <div class="hcenter vcenter right">
+    <div class="hcenter vcenter right mobilefirst">
         <h2>Autodidacte</h2>
         <div class="container">
           <h3>Openclassrooms</h3>
-          <p>Apprenez à créer votre site web avec HTML5 et CSS3 </p>
-          <p>Concevez votre site web avec PHP et MySQL</p>
-          <p>Algorithmique pour l'apprenti programmeur </p>
-          <p>Découvrez le fonctionnement des algorithmes </p>
-          <p>UX design : découvrez les fondamentaux ! </p>
-          <p>Gérez votre projet avec une équipe Scrum </p>
-          <p> Reprenez le contrôle à l'aide de Linux !</p>    
+          <ul>
+            <li>Apprenez à créer votre site web avec HTML5 et CSS3 </p>
+            <li>Concevez votre site web avec PHP et MySQL</li>
+            <li>Algorithmique pour l'apprenti programmeur </li>
+            <li>Découvrez le fonctionnement des algorithmes </li>
+            <li>UX design : découvrez les fondamentaux ! </li>
+            <li>Gérez votre projet avec une équipe Scrum </li>
+            <li> Reprenez le contrôle à l'aide de Linux !</li> 
+          </ul>             
         </div>
         <div class="container">
           <h3>freecodecamp</h3>
-          <p>curriculum Responsive Web Design</p>
-          <p>Javascript Algorithms And Data Structures Certification (en cours)</p>
+          <ul>
+            <li>curriculum Responsive Web Design</li>
+            <li>Javascript Algorithms And Data Structures Certification (en cours)</li>
+          </ul>
         </div>
       </div>
   </section>
-  <section id="Professional" class="flex">
-    <div class="left hcenter vcenter tcenter">
+  <section id="Professional" class="flex mobilefirst">
+    <div class="left hcenter vcenter mobilefirst">
       <h2>Expériences Professionelles en tant que développeuse</h2>  
       <div class="container">  
         <h3>Stage</h3>
@@ -212,7 +218,7 @@
         <p>date et société</p>
       </div>
     </div>
-    <div class="right vcenter hcenter tcenter">
+    <div class="right vcenter hcenter mobilefirst">
       <h2>Expériences Professionelles antérieures</h2>
       <div class="container">
         <h3>Animatrice socio-culturelle</h3>
@@ -223,7 +229,7 @@
       <div class="container">
         <h3>Educatrice de jeunes enfants</h3>
         <p>De juillet 2016 à juillet 2017</p>
-        Accueil et accompagnement de jeunes enfants de 3 mois à 3 ans (organisation de la vie quotidienne, mise en place d'activités éducatives, observation, suivi) et de leur famille (écoute et soutien). Accompagnement pédagogique de l'équipe. Mise en place et animation des réunions de section et d'analyses de pratiques professionnelles.
+        <p>Accueil et accompagnement de jeunes enfants de 3 mois à 3 ans (organisation de la vie quotidienne, mise en place d'activités éducatives, observation, suivi) et de leur famille (écoute et soutien). Accompagnement pédagogique de l'équipe. Mise en place et animation des réunions de section et d'analyses de pratiques professionnelles.</p>
       </div>  
     </div>
   </section>
@@ -231,15 +237,15 @@
 </main>
 <!--end of  the main-->
 <!--start of the footer-->
-<footer class="flex mobilefirst">
-  <section id="AboutMe" class="tcenter vcenter hstart mobilefirst">
+<footer class="flex smalltxt">
+  <section id="AboutMe" class=" about vcenter hstart mobilefirst">
     <h2>Qui suis-je?</h2>
     <p>Passionnée par le monde de l'informatique depuis très jeune, je n’ai cessé de suivre l’évolution de ces technologies. Après un parcours de 20 ans dans le travail social, j'ai eu l'envie d'apprendre le métier de développeur. Mon but: Créer des sites et des applications à la fois beaux, responsive, dynamiques et répondant aux besoins et aux envies des clients. Pour celà je suis en apprentissage et en veille permanente de manière à être toujours à la pointe d'une technologie qui évolue en permanence. </p>
-    <form>
+    <form class="flex hcenter hcenter desk pad">
       <input  class="btn "type="button" value="Télécharger mon CV" onclick="window.location.href='./pdf/CVIsabellePasseniers.pdf'"/> 
     </form> 
   </section>
-  <section id="Contact" class="">
+  <section id="Contact" class="mobilefirst ">
     <h2>Pour me contacter:</h2>
 <!--<div class="container">
       <form action="/action_page.php">
@@ -253,18 +259,22 @@
         <input type="Envoyer" value="Envoyer">
       </form>
     </div>-->
-    <div class="contact tcenter col vcenter">
-      <h4>Isabelle Passeniers</h4>
-      <address class="">
-        53/12, rue du 8 mai 1945,<br>
-        59370 Mons en Baroeul
-      </address>
-      <a href="tel: +33 627 131 480">06.27.13.14.80</a><br>
-      <a href="mailto:joe@example.com?subject=feedback">isabelle.passeniers@gmail.com</a>
+    <div class=" flex col mobilefirst">
+      
+      <div class="content">
+        <h4>Isabelle Passeniers</h4>
+        <address>
+          53/12, rue du 8 mai 1945,<br>
+          59370 Mons en Baroeul
+        </address>
+        <a href="tel: +33 627 131 480">06.27.13.14.80</a><br>
+        <a href="mailto:joe@example.com?subject=feedback">isabelle.passeniers@gmail.com</a>
+      </div>
+      
     </div>
     
   </section>
-  <aside  class="fsocial hend tcenter vcenter">
+  <aside  class="fsocial hend tcenter vcenter mobilefirst">
     <h2>Suivez moi</h2>
     <div class="SocialContainer vcenter ">
       <a href="https://www.linkedin.com/in/isabelle-passeniers/"><i class="fab fa-linkedin"></i></a>
@@ -272,7 +282,7 @@
       <a href="https://github.com/isapas"><i class="fab fa-github"></i></a>
     </div>
   </aside>
-  <aside class="copyright hcenter vcenter">
+  <aside class="copyright tcenter">
     <p>Développé par Isabelle Passeniers 2018</p>
   </aside>
 </footer>
