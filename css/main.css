@@ -98,12 +98,8 @@ textarea {
 /*start utility classes*/
 
 .flex {
-
   display: flex;
   flex-wrap: wrap;
-}
-.between {
-  justify-content: space-between;
 }
 .hstart {
   justify-content: flex-start;
@@ -120,62 +116,49 @@ textarea {
 .vstart {
   align-items: flex-start;
 }
-.vend {
-    align-items: flex-end;
-}
 .centered {
   margin:auto;
 }
 .col {
-  display: column;
-}
-.row {
-  flex-direction: row;
+ flex-direction: column;
 }
 .tcenter {
   text-align: center;
 }
 .SeparateItems {
-  margin: 0.2em;
+  margin: 0.15em;
 }
 
 /* end of utility classes*/
 /*construction rules*/
 .left {
-  background-color: lightblue;
   width: 50%;
 }
 .right {
-  background-color: lightpink;
   width: 50%;
 }
-.tcontainer {
-  background-color: greenyellow;
-  height: calc(100% / 3);
+.Accueil {
+  height: 92vh;
+}
+.about {
+  width:33%;
+}
+.smalltxt{
+  font-size: 0.8em;
 }
 
-#Accueil {
-  height: 48vh;
-}
-#AboutMe {
-  width: 33.3%;
-  background-color: lightyellow;
-}
-#Contact{
-  width: 33.3%;
-  background-color: pink;
-}
 .contact {
+  width: 33%;
   margin-top: 20%;
   margin-bottom: 20%
 }
 .fsocial {
-    width: 33.3%;
-    background-color: lightblue;
+  width: 33%;
+
 }
 .copyright {
   width: 100%;
-  background-color: lightgrey;
+  justify-content: center;
 }
 .skillsicons {
   height: 50%;
@@ -195,6 +178,10 @@ body {
 h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
+  text-align: center;
+}
+p {
+  margin: 1em;
 }
 
 a {
@@ -213,20 +200,19 @@ a {
   justify-content: space-around;
   font-size: 2em;
   color: lightgrey;
+  margin-top: 2em;
 }
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 5em;
+  height: 5em;
   display: inline-block;
 }
 .icon {
   font-size: 4em;
   padding: 0.1em;
-  background-color: darkcyan;
   color: darkgrey;
 }
 .skillsicons {
-  background-color: orange;
   width: 50%
 }
 .iconcontainer {
@@ -234,20 +220,27 @@ a {
   margin-bottom: 1em;
 }
 figure {
-
     min-width: 70%;
     height: auto;
 }
 h2 {
-  background-color: lightgreen;
   text-align: center;
 }
-/* top nav responsive w3schools*/
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+main {
 
+}
+footer {
+
+}
+.smallcontainer {
+  margin: auto;
+  line-height: 4em;
+  background-color: whitesmoke;
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -287,8 +280,9 @@ body {
 /* rules of the portfolio projects*/
 .projectcontainer {
   width: 33.3%;
-  height: 70vh;
-  background-color: lightgreen;
+  height: 80vh;
+ma photo
+h;
 }
 .pcontainer {
   width: 80%;
@@ -296,6 +290,7 @@ body {
 .whidthall {
   width: 100%;
 }
+
 /*end of other rules*/
 /* ==========================================================================
    Helper classes
@@ -410,6 +405,7 @@ body {
     display: block;
     margin: auto;
     width: 100%;
+    height: unset;
   }
 
   .col {
@@ -419,10 +415,29 @@ body {
   .projectcontainer {
     width: 100%;
   }
+  #AboutMe {
+    width: 100%;
+  }
+  .contact {
+    display: block;
+    width: 100%;
+  }
 }
 /* tab*/
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition  = 560px = tab*/
+  /* Style adjustments for viewports that meet the condition  = 560px = tab*/
+  .about {
+    width: 33%;
+  }
+  .contact {
+    width: 33%;
+  }
+.fsocial {
+  width: 33%;
+}
+.content {
+  margin: 5em;
+}
 }
 
 
